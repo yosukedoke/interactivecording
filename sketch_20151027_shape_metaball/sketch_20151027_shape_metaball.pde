@@ -2,7 +2,7 @@ PShape testsvg;
 PShape boo;
 
 float blurRadius = 0;
-float threshouldRecio = 1;
+float threshouldRacio = 1;
 
 Ball[] balls;
 
@@ -37,7 +37,7 @@ void draw(){
   
   if(applyFilter) {
     filter(BLUR, blurRadius);
-    filter(THRESHOLD, threshouldRecio);
+    filter(THRESHOLD, threshouldRacio);
   }
 }
 
@@ -46,5 +46,5 @@ void mouseClicked() {
 }
 void mouseMoved() {
   blurRadius      = mouseX * 0.02;
-  threshouldRecio = min(mouseY * 0.003, 1);
+  threshouldRacio = min(mouseY * 0.003, 1);
 }
