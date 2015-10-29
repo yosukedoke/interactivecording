@@ -3,7 +3,7 @@ PShape svgdata;
 float blurRadius = 0;
 float threshouldRacio = 1;
 
-boolean applyFilter = true;
+boolean applyFilter = false;
 
 void setup() {
   size(500, 500);
@@ -19,12 +19,12 @@ void setup() {
   //svgdata = loadShape("test_graphics_nofilled-lines.svg");
   //svgdata = loadShape("test_graphics_styled-lines.svg");
   //svgdata = loadShape("test_graphics_styled-lines2.svg");
-  svgdata = loadShape("boo.svg");
+  //svgdata = loadShape("boo.svg");
   
 }
 void draw(){
   background(255);
-  shape(svgdata, 0, 0, 600, 600);
+  shape(svgdata, 0, 0, 500, 500);
   
   if(applyFilter) {
     filter(BLUR, blurRadius);
